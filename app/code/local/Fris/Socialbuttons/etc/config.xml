@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * fris - smart commerce extensions for Magento
+ *
+ * @category  Fris
+ * @package   Fris_Socialbuttons
+ * @copyright Copyright (c) 2015 fris IT (http://fris.technology)
+ * @license   http://fris.technology/license
+ * @author    fris IT <support@fris.technology>
+ */
+-->
+<config>
+    <modules>
+        <Fris_Socialbuttons>
+            <version>1.0.2</version>
+        </Fris_Socialbuttons>
+    </modules>
+
+    <global>
+        <blocks>
+            <fris_socialbuttons>
+                <class>Fris_Socialbuttons_Block</class>
+            </fris_socialbuttons>
+        </blocks>
+        <helpers>
+            <fris_socialbuttons>
+                <class>Fris_Socialbuttons_Helper</class>
+            </fris_socialbuttons>
+        </helpers>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <socialbuttons module="Fris_Socialbuttons">
+                    <file>fris/socialbuttons/socialbuttons.xml</file>
+                </socialbuttons>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+        <design>
+            <socialbuttons module="fris_socialbuttons">
+                <font_icon_facebook>fa fa-facebook</font_icon_facebook>
+                <font_icon_google_plus>fa fa-google-plus</font_icon_google_plus>
+                <font_icon_linkedin>fa fa-linkedin</font_icon_linkedin>
+                <font_icon_pinterest>fa fa-pinterest</font_icon_pinterest>
+                <font_icon_twitter>fa fa-twitter</font_icon_twitter>
+                <font_icon_twitter_follow></font_icon_twitter_follow>
+                <twitter_handle></twitter_handle>
+                <button_container_style></button_container_style>
+                <button_style></button_style>
+            </socialbuttons>
+        </design>
+    </default>
+
+</config>

@@ -1,0 +1,73 @@
+/**
+ * fris - smart commerce extensions for Magento
+ *
+ * @category  Fris
+ * @package   Fris_Socialbuttons
+ * @copyright Copyright (c) 2015 fris IT (http://fris.technology)
+ * @license   http://fris.technology/license
+ * @author    fris IT <support@fris.technology>
+ */
+
+.social-icons-flat > a {
+  background-color: grey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 18px;
+  height: 34px;
+  width: 28px;
+  line-height: 0.8;
+  margin: 5px 12px 0 0;
+  padding: 10px 24px 7px 9px;
+  text-decoration: none;
+}
+.social-icons-flat > a {
+  /* This makes buttons circular */
+  /* border-radius: 17px; */
+}
+.social-icons-flat > a:hover {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-icons-flat .sb-facebook {
+  background-color: #2d609b;
+}
+.social-icons-flat .sb-facebook:hover {
+  background-color: #244872;
+}
+
+.social-icons-flat .sb-google-plus {
+  background-color: #e93f2e;
+}
+.social-icons-flat .sb-google-plus:hover {
+  background-color: #ce2616;
+}
+
+.social-icons-flat .sb-linkedin {
+  background-color: #257BBA;
+}
+.social-icons-flat .sb-linkedin:hover {
+  background-color: #005983;
+}
+
+.social-icons-flat .sb-pinterest {
+  background-color: #ca212a;
+}
+.social-icons-flat .sb-pinterest:hover {
+  background-color: #8a1119;
+}
+
+.social-icons-flat .sb-twitter,
+.social-icons-flat .sb-twitter-follow {
+  background-color: #00c3f3;
+}
+.social-icons-flat .sb-twitter-follow {
+  padding-right: 8px;
+  width: auto;
+}
+.social-icons-flat .sb-twitter:hover,
+.social-icons-flat .sb-twitter-follow:hover {
+  background-color: #0eaad6;
+}

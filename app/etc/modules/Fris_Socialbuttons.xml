@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Fris_Socialbuttons>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Fris_Socialbuttons>
+    </modules>
+</config>

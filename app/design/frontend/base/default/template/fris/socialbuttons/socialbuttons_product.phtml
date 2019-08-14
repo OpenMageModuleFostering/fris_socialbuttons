@@ -1,0 +1,42 @@
+<?php
+  /**
+   * fris - smart commerce extensions for Magento
+   *
+   * @category  Fris
+   * @package   Fris_Socialbuttons
+   * @copyright Copyright (c) 2015 fris IT (http://fris.technology)
+   * @license   http://fris.technology/license
+   * @author    fris IT <support@fris.technology>
+   */
+  $socialButtons = $this->getSocialButtonsInfo();
+
+  $containerStyle = trim(Mage::getStoreConfig('design/socialbuttons/button_container_style'));
+  if (!empty($containerStyle)) {
+    $containerStyle = "style='$containerStyle'";
+  }
+
+  $style = trim(Mage::getStoreConfig('design/socialbuttons/button_style'));
+  if (!empty($style)) {
+    $style = "style='$style'";
+  }
+?>
+<script>
+    function socialShareWindow(url) {
+      var width = 600;
+      window.open(url, "_blank", "width=" + width);
+    }
+</script>
+<div class="social-icons-flat" <?php echo $containerStyle;?>>
+    <?php
+        foreach ($socialButtons as $key => $fontIconInfo) {
+            $fontIconClass = trim(Mage::getStoreConfig("design/socialbuttons/font_icon_$key"));
+            if ($fontIconClass) {
+                $key = str_replace('_', '-', $key);
+                $tooltip  = $fontIconInfo['tooltip'];
+                $shareUrl = $fontIconInfo['share_url'];
+                $label = empty($fontIconInfo['button_label']) ? '&nbsp;' : $fontIconInfo['button_label'];
+                echo "<a class='sb-$key $fontIconClass' $style title='$tooltip' onclick='socialShareWindow(\"$shareUrl\")'>$label</a>";
+            }
+        }
+    ?>
+</div>

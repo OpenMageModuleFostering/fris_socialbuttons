@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * fris - smart commerce extensions for Magento
+ *
+ * @category  Fris
+ * @package   Fris_Socialbuttons
+ * @copyright Copyright (c) 2015 fris IT (http://fris.technology)
+ * @license   http://fris.technology/license
+ * @author    fris IT <support@fris.technology>
+ */
+-->
+<layout version="1.0.0">
+    <!-- see layout/catalog.xml and template/catalog/product/view.phtml of the relevant theme -->
+    <catalog_product_view>
+        <reference name="product.info">
+            <!-- Uncomment the block/region that suits you most -->
+            <block type="fris_socialbuttons/Socialbuttons" name="fris.socialbuttons" as="other"/>
+            <!--block type="fris_socialbuttons/Socialbuttons" name="fris.socialbuttons" as="extra_buttons"/-->
+            <!--block type="fris_socialbuttons/Socialbuttons" name="fris.socialbuttons" as="sharing"/-->
+            <!--block type="fris_socialbuttons/Socialbuttons" name="fris.socialbuttons" as="upsell_products"/-->
+            <!--block type="fris_socialbuttons/Socialbuttons" name="fris.socialbuttons" as="product_additional_data"/-->
+        </reference>
+    </catalog_product_view>
+
+    <default>
+        <reference name="head">
+            <action method="addLinkRel">
+                <rel>stylesheet</rel>
+                <href>//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css</href>
+            </action>
+            <action method="addCss">
+                <stylesheet>fris/socialbuttons/css/socialbuttons.css</stylesheet>
+            </action>
+        </reference>
+    </default>
+</layout>

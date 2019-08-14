@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * fris - smart commerce extensions for Magento
+ *
+ * @category  Fris
+ * @package   Fris_Socialbuttons
+ * @copyright Copyright (c) 2015 fris IT (http://fris.technology)
+ * @license   http://fris.technology/license
+ * @author    fris IT <support@fris.technology>
+ */
+-->
+<config>
+    <sections>
+        <design>
+            <groups>
+                <socialbuttons translate="label comment" module="fris_socialbuttons">
+                    <label>Social Network Buttons</label>
+                    <sort_order>600</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>Social network share buttons appear on the product view. Each selected button pops up a share window prepopulated with product-specific info. Blank out a field if you do not wish to have the associated button on the product view.</comment>
+                    <fields>
+                        <version translate="label">
+                            <label>Version</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>fris_socialbuttons/adminhtml_version</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </version>
+                        <font_icon_facebook translate="label">
+                            <label>Font icon for facebook</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[<em>fa fa-facebook</em> or <em>fa fa-facebook-square</em>]]></comment>
+                        </font_icon_facebook>
+                        <font_icon_google_plus translate="label">
+                            <label>Font icon for Google+</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[<em>fa fa-google-plus</em> or <em>fa fa-google-plus-square</em>]]></comment>
+                        </font_icon_google_plus>
+                        <font_icon_linkedin translate="label">
+                            <label>Font icon for LinkedIn</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[<em>fa fa-linkedin</em> or <em>fa fa-linkedin-square</em>]]></comment>
+                        </font_icon_linkedin>
+                        <font_icon_pinterest translate="label">
+                            <label>Font icon for Pinterest</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[<em>fa fa-pinterest</em> or <em>fa fa-pinterest-square</em>]]></comment>
+                        </font_icon_pinterest>
+                        <font_icon_twitter translate="label">
+                            <label>Font icon for Twitter</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[<em>fa fa-twitter</em> or <em>fa fa-twitter-square</em>]]></comment>
+                        </font_icon_twitter>
+                        <font_icon_twitter_follow translate="label">
+                            <label>Font icon for Twitter Follow</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[<em>fa fa-twitter</em> or <em>fa fa-twitter-square</em>]]></comment>
+                        </font_icon_twitter_follow>
+                        <twitter_handle translate="label">
+                            <label>Twitter handle</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The Twitter screen name that you want visitors to follow, for example: @my_company</comment>
+                        </twitter_handle>
+                        <button_container_style translate="label">
+                            <label>Button container element style (CSS)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[For example, to right-justify buttons, enter:<br/><em>display:flex; justify-content:flex-end;</em>]]></comment>
+                        </button_container_style>
+                        <button_style translate="label">
+                            <label>Additional button style (CSS)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Applied to each button. For example, to make buttons circular and add extra spacing too, enter:<br/><em>border-radius: 17px; margin-right: 25px;</em>]]></comment>
+                        </button_style>
+                    </fields>
+                </socialbuttons>
+            </groups>
+        </design>
+    </sections>
+</config>
