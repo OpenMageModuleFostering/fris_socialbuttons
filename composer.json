@@ -1,17 +1,5 @@
 {
-    "name": "OpenMageModuleFostering/Fris_Socialbuttons",
-    "type": "magento-module",
-    "license": "proprietry",
-    "homepage": "",
-    "description": "Let your visitors do your marketing while you sleep! 
-Adds product-specific share buttons for several social networks to your product display pages. Works great with the analytics provided by Pinterest etc. to analyse return traffic.",
-    "authors": [
-    {
-        "name": "fris",
-        "email": "support@fris.technology.com"
-    }
-],
-    "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+    "keywords": [
+        "openmage-module"
+    ]
 }
